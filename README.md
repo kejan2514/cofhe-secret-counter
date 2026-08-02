@@ -1,7 +1,15 @@
 # 🔐 CoFHE Secret Counter
+![Solidity](https://img.shields.io/badge/Solidity-0.8.18-blue?style=flat-square)
+![CoFHE](https://img.shields.io/badge/CoFHE-Encrypted-success?style=flat-square)
+![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Work_in_Progress-orange?style=flat-square)
 
 A beginner-friendly smart contract demonstrating encrypted state management with CoFHE and Solidity.
+## 🎯 Vision
 
+CoFHE Secret Counter demonstrates how Fully Homomorphic Encryption (FHE) enables privacy-preserving smart contracts by allowing computations on encrypted values.
+
+This repository serves as a practical learning resource for developers exploring CoFHE, Solidity, and confidential on-chain computation.
 ## 📖 Overview
 
 This project shows how Fully Homomorphic Encryption (FHE) can be used in smart contracts to keep on-chain values private while still allowing computations on encrypted data.
