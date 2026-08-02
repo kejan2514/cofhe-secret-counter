@@ -6,7 +6,14 @@
 
 A beginner-friendly smart contract demonstrating encrypted state management with CoFHE and Solidity.
 ## 🎯 Vision
-
+```mermaid
+flowchart TD
+    A[User] --> B[Encrypt Input]
+    B --> C[CoFHE Smart Contract]
+    C --> D[Encrypted Counter]
+    D --> E[Authorized Decryption]
+    E --> F[Owner]
+```
 CoFHE Secret Counter demonstrates how Fully Homomorphic Encryption (FHE) enables privacy-preserving smart contracts by allowing computations on encrypted values.
 
 This repository serves as a practical learning resource for developers exploring CoFHE, Solidity, and confidential on-chain computation.
