@@ -1,0 +1,30 @@
+{
+  "name": "cofhe-secret-counter",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A privacy-preserving encrypted counter built with CoFHE and Solidity.",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "clean": "hardhat clean"
+  },
+  "devDependencies": {
+    "@cofhe/hardhat-plugin": "0.5.1",
+    "@cofhe/sdk": "0.5.1",
+    "@fhenixprotocol/cofhe-contracts": "0.1.3",
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.12",
+    "@types/chai": "^4.3.16",
+    "@types/mocha": "^10.0.7",
+    "@types/node": "^20.14.10",
+    "chai": "^4.4.1",
+    "ethers": "^6.13.1",
+    "hardhat": "^2.22.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@9.15.0"
+}
