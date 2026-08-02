@@ -4,7 +4,7 @@ import "@nomicfoundation/hardhat-ethers";
 import { HardhatUserConfig } from "hardhat/config";
 
 const config: HardhatUserConfig = {
-  solidity: "0.8.18",
+  solidity: "0.8.25",
 
   networks: {
     hardhat: {},
