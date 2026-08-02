@@ -7,7 +7,9 @@ const config: HardhatUserConfig = {
   solidity: "0.8.25",
 
   networks: {
-    hardhat: {},
+    hardhat: {
+      hardfork: "cancun",
+    },
   },
 };
 
