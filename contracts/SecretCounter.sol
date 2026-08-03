@@ -25,7 +25,10 @@ contract SecretCounter {
         );
         _;
     }
-
+event OwnershipTransferred(
+    address indexed previousOwner,
+    address indexed newOwner
+);
     constructor(uint64 initialValue) {
         owner = msg.sender;
 
@@ -109,4 +112,18 @@ contract SecretCounter {
 
         return value;
     }
+/**
+ * @notice Transfer control of the counter to another address.
+ * @param newOwner Address of the new owner.
+ */
+function transferOwnership(address newOwner) external onlyOwner {
+    require(newOwner != address(0), "New owner cannot be zero address");
+
+    address previousOwner = owner;
+    owner = newOwner;
+
+    FHE.allow(counter, newOwner);
+
+    emit OwnershipTransferred(previousOwner, newOwner);
+}
 }
