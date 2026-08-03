@@ -29,6 +29,11 @@ event OwnershipTransferred(
     address indexed previousOwner,
     address indexed newOwner
 );
+event CounterUpdated(
+    address indexed operator,
+    string action,
+    uint256 timestamp
+);
     constructor(uint64 initialValue) {
         owner = msg.sender;
 
@@ -49,6 +54,7 @@ event OwnershipTransferred(
 
         FHE.allowThis(counter);
         FHE.allow(counter, owner);
+emit CounterUpdated(msg.sender, "increment", block.timestamp);
     }
 
     /**
@@ -59,6 +65,7 @@ event OwnershipTransferred(
 
         FHE.allowThis(counter);
         FHE.allow(counter, owner);
+emit CounterUpdated(msg.sender, "decrement", block.timestamp);
     }
 
     /**
@@ -69,6 +76,7 @@ event OwnershipTransferred(
 
         FHE.allowThis(counter);
         FHE.allow(counter, owner);
+emit CounterUpdated(msg.sender, "reset", block.timestamp);
     }
 
     /**
